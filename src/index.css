@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Barlow Condensed', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #09090b;
+    color: #fafafa;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    background-color: #09090b;
+    color: #fafafa;
+    overflow-x: hidden;
+    selection-background-color: #f97316;
+    selection-color: #09090b;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Matte Carbon & Arena Ember Surface Styling */
+.bg-carbon-grid {
+  background-color: #09090b;
+  background-image: 
+    radial-gradient(circle at 20% 25%, rgba(249, 115, 22, 0.14) 0%, transparent 45%),
+    radial-gradient(circle at 80% 30%, rgba(234, 179, 8, 0.10) 0%, transparent 50%),
+    radial-gradient(circle at 50% 85%, rgba(249, 115, 22, 0.08) 0%, transparent 55%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.02) 25%, transparent 25%),
+    linear-gradient(225deg, rgba(255, 255, 255, 0.02) 25%, transparent 25%),
+    linear-gradient(45deg, rgba(255, 255, 255, 0.02) 25%, transparent 25%),
+    linear-gradient(315deg, rgba(255, 255, 255, 0.02) 25%, #09090b 25%);
+  background-position: 0 0, 0 0, 0 0, 12px 0, 12px 0, 0 0, 0 0;
+  background-size: 100% 100%, 100% 100%, 100% 100%, 24px 24px, 24px 24px, 24px 24px, 24px 24px;
+}
+
+/* Metallic Silver & Glowing Orange-Gold Text Treatments matching reference artwork */
+.text-metallic-silver {
+  background: linear-gradient(180deg, #ffffff 0%, #e4e4e7 55%, #a1a1aa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.85));
+}
+
+.text-metallic-gold {
+  background: linear-gradient(180deg, #fde047 0%, #fb923c 52%, #ea580c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 10px rgba(249, 115, 22, 0.35));
+}
+
+/* Primary Orange-Gold Glowing CTA Button matching reference artwork */
+.btn-arena-gold {
+  background: linear-gradient(180deg, #fde047 0%, #f59e0b 45%, #ea580c 100%);
+  box-shadow: 
+    0 0 24px rgba(249, 115, 22, 0.45),
+    inset 0 1px 1px rgba(255, 255, 255, 0.65),
+    inset 0 -2px 4px rgba(154, 52, 18, 0.6);
+  transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1), opacity 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-arena-gold:hover {
+  transform: translateY(-1px) scale(1.01);
+}
+
+.btn-arena-gold:active {
+  transform: translateY(0) scale(0.99);
+}
+
+/* Secondary Glassmorphic Button matching reference artwork */
+.btn-arena-glass {
+  background: linear-gradient(180deg, rgba(39, 39, 42, 0.85) 0%, rgba(18, 18, 21, 0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1), opacity 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-arena-glass:hover {
+  transform: translateY(-1px);
+  border-color: rgba(251, 146, 60, 0.45);
+}
+
+/* Premium Glassmorphic Card with Top Gold Rim Light */
+.arena-glass-card {
+  background: linear-gradient(165deg, rgba(32, 32, 36, 0.82) 0%, rgba(15, 15, 18, 0.94) 100%);
+  border: 1px solid rgba(251, 146, 60, 0.25);
+  box-shadow: 
+    0 16px 40px -12px rgba(0, 0, 0, 0.85),
+    inset 0 1px 0 0 rgba(253, 224, 71, 0.35);
+  backdrop-filter: blur(16px);
+}

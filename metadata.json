@@ -1,0 +1,6 @@
+{
+  "name": "Esports Arena — Skill-Based Free Fire Tournaments & Free Ludo",
+  "description": "Esports Arena is a skill-based esports community and free multiplayer gaming platform for Indian mobile gamers featuring daily Free Fire custom tournaments and 100% free classic Ludo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
